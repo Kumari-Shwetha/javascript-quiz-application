@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" type="text/css" href="./dist/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="welcome_text">
+            <form class="welcome_form" onsubmit="submitForm(event)" name="welcome_form">
+                <input type="text" placeholder="Enter Your Name" name="name">
+                <button type="submit" class="btn">Start Quiz</button>
+            </form>
+        </div>
+        <div class="quiz">
+            <div class="quiz_header">
+                <div class="quiz-user">
+                    <h4>Welcome! <span class="name"></span></h4>
+                </div>
+                <div class="quiz-timer">
+                    <span class="time">00:00</span>
+                </div>
+            </div>
+            <div class="quiz_body">
+                <div id="questions">
+                <h2 class="question">Q<span class="question-no-span"></span>. <span class="question-span"></span></h2>
+                <ul class="option_group">
+                    <li data-id="0" class="option"></li>
+                    <li data-id="1" class="option"></li>
+                    <li data-id="2" class="option"></li>
+                    <li data-id="3" class="option"></li>
+                </ul>
+                </div>
+                <button type="submit" class="btn" onclick="next()">Next Question</button>
+            </div>
+        </div>
+        <div class="result">
+            <i class="fas fa-award award-icon"></i>
+            <h1 class="username">Hello done! <span class="name"></span></h1>
+            <h3 class="user-score">Your score is: <span class="score"></span> / <span class="total-question"></span></h3>
+            <p class="user-time">Time taken: <span class="total-time"></span></p>
+
+            <button class="btn tryagain" onclick="tryAgain()">Try Again</button>
+        </div>
+    </div>
+
+    <script src="./dist/js/main.js"></script>
+</body>
+
+</html>
