@@ -231,3 +231,33 @@ p.user-time span.total-time {
     }
 
 }
+
+@media(max-width:375px) {
+   
+   .quiz {
+       width: 350px;
+   }
+   h2.question{
+       font-size: 1rem;
+       line-height: 1.5;
+   }
+   .option_group li.option {
+       padding: 10px 15px;
+       font-size: 1rem;
+   }
+   .quiz_body .btn {
+       padding: 10px 15px;
+   }
+   .btn {
+        font-size: 20px;
+   }
+}
+
+@media (max-width: 320px) {
+.welcome_text {
+    width: 300px;
+}
+.quiz {
+    width: 300px;
+}
+}
