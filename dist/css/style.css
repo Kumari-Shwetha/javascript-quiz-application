@@ -235,7 +235,7 @@ p.user-time span.total-time {
 @media(max-width:375px) {
    
    .quiz {
-       width: 350px;
+    width: 300px;
    }
    h2.question{
        font-size: 1rem;
@@ -257,7 +257,5 @@ p.user-time span.total-time {
 .welcome_text {
     width: 300px;
 }
-.quiz {
-    width: 300px;
-}
+
 }
